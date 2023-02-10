@@ -1,0 +1,121 @@
+body{
+    max-width: 1170px;
+    margin: auto;
+}
+h1,h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-close{
+    visibility:hidden;
+}
+
+#carouselExampleAutoplaying{
+    width: calc(100% - 300px);
+    float: right;
+}
+
+.carousel-caption{
+    bottom:10rem;
+    animation:slide-in 1.5s ease-out 1;
+}
+
+.my-carrousel-img{
+    height: 736px;
+    object-fit: cover;
+}
+
+@-webkit-keyframes slide-in{
+    0%{
+        opacity:0;
+        -webkit-transform:translateY(70px);
+    }
+    80%{
+        opacity:0;
+        -webkit-transform:translateY(25px);
+    }
+    
+    100%{
+        opacity:1;
+        -webkit-transform:translateY(0px);
+    }
+}
+@keyframes slide-in{
+    0%{
+        opacity:0;
+        transform:translateY(70px);
+    }
+    70%{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    
+    100%{
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
+
+.offcanvas.offcanvas-start {
+    left:auto;
+    background-color: #f2f3f7;
+}
+
+.offcanvas-header{
+    display: block;
+}
+
+.offcanvas-header{
+    padding-top: 0px;
+}
+
+.offcanvas-body {
+    margin-top: -60px;
+}
+
+@media screen and (max-width:768px) {
+    .offcanvas.show:not(.hiding), .offcanvas.showing {
+        transform: translateX(-100%);
+    }
+    .btn-close{
+        visibility:visible;
+    }
+    #carouselExampleAutoplaying{
+        width: auto;
+        float: right;
+    }
+}
+
+.my-aside-container{
+    padding: 20px 0px;
+}
+
+.my-aside-card{
+    border:transparent;
+    background-color: #f2f3f7;
+}
+
+.my-aside-photo{
+    width: 150px;
+    margin: 45px auto 20px auto;
+}
+
+.my-list-group{
+    text-align: center;
+}
+
+.my-list-group a{
+    text-decoration: none;
+    color: rgb(118, 118, 118);
+}
+
+.my-list-item{
+    margin-bottom: 16px;
+}
+
+.my-list-item:hover,
+.my-list-item:active,
+.my-list-item:focus{
+    text-decoration: underline;
+    color: rgb(33, 157, 194);
+}
