@@ -40,6 +40,11 @@ h2{
     overflow: scroll;
 }
 
+.my-frame-fixed{
+    max-width: 350px;
+    position:fixed;
+}
+
 .my-aside-card{
     margin-top: 20px;
     border:transparent;
