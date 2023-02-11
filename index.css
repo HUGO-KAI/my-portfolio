@@ -1,18 +1,21 @@
+@import './animation/animation.css';
+
 body{
     max-width: 1170px;
     margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 h1,h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.btn-close{
-    visibility:hidden;
+h1{
+    font-size: 48px;
+    font-weight: 600;
 }
 
-#carouselExampleAutoplaying{
-    width: calc(100% - 300px);
-    float: right;
+h2{
+    font-size: 36px;
 }
 
 .carousel-caption{
@@ -25,92 +28,37 @@ h1,h2{
     object-fit: cover;
 }
 
-@-webkit-keyframes slide-in{
-    0%{
-        opacity:0;
-        -webkit-transform:translateY(70px);
-    }
-    80%{
-        opacity:0;
-        -webkit-transform:translateY(25px);
-    }
-    
-    100%{
-        opacity:1;
-        -webkit-transform:translateY(0px);
-    }
-}
-@keyframes slide-in{
-    0%{
-        opacity:0;
-        transform:translateY(70px);
-    }
-    70%{
-        opacity:0;
-        transform:translateY(25px);
-    }
-    
-    100%{
-        opacity:1;
-        transform:translateY(0px);
-    }
-}
 
-.offcanvas.offcanvas-start {
-    left:auto;
-    background-color: #f2f3f7;
+.my-canvas{
+    display: none;
 }
-
-.offcanvas-header{
-    display: block;
-}
-
-.offcanvas-header{
-    padding-top: 0px;
-}
-
 .offcanvas-body {
-    margin-top: -60px;
+    margin-top: 60px;
 }
-
-@media screen and (max-width:768px) {
-    .offcanvas.show:not(.hiding), .offcanvas.showing {
-        transform: translateX(-100%);
-    }
-    .btn-close{
-        visibility:visible;
-    }
-    #carouselExampleAutoplaying{
-        width: auto;
-        float: right;
-    }
-}
-
-.my-aside-container{
-    padding: 20px 0px;
+.my-aside{
+    background-color: #f2f3f7;
+    overflow: scroll;
 }
 
 .my-aside-card{
+    margin-top: 20px;
     border:transparent;
     background-color: #f2f3f7;
 }
 
 .my-aside-photo{
     width: 150px;
-    margin: 45px auto 20px auto;
-}
-
-.my-list-group{
-    text-align: center;
-}
-
-.my-list-group a{
-    text-decoration: none;
-    color: rgb(118, 118, 118);
+    margin: 0px auto 0px auto;
 }
 
 .my-list-item{
     margin-bottom: 16px;
+}
+
+.my-list-group a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(118, 118, 118);
 }
 
 .my-list-item:hover,
@@ -118,4 +66,73 @@ h1,h2{
 .my-list-item:focus{
     text-decoration: underline;
     color: rgb(33, 157, 194);
+}
+
+.my-paragraph{
+    margin: 20px 0px 80px 0px;
+}
+.my-paragraph>span{
+    color:rgb(118, 118, 118);
+    font-weight: 500;
+    letter-spacing: 5px;
+    display: block;
+    margin-bottom: 20px;
+}
+.my-paragraph h2{
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+}
+.my-paragraph p{
+    color:rgb(118, 118, 118);
+    letter-spacing: 2px;
+}
+
+.my-services-card{
+    border: transparent;
+}
+
+.my-card-img-top{
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.my-card-list{
+    list-style: none;
+}
+
+@media screen and (max-width:769px) {
+    .my-canvas{
+        display: block;
+    }
+    .navbar{
+        padding: 0px;
+    }
+    .navbar-toggler{
+        position: fixed;
+        filter: brightness(100);
+        top: 2%;
+        z-index: 999;
+    }
+    .navbar-toggler:focus{
+        color: transparent;
+    }
+    .my-aside{
+        display: none;
+    }
+    .btn-close{
+        visibility:visible;
+    }
+
+    .offcanvas {
+        max-width: 80%;
+        background-color: #f2f3f7;
+    }
+    #carouselExampleAutoplaying{
+        width: auto;
+        float: right;
+    }
+    .my-paragraph{
+        text-align: center;
+    }
 }
