@@ -18,6 +18,13 @@ h2{
     font-size: 36px;
 }
 
+section{
+    margin-bottom: 50px;
+}
+
+.carousel{
+    margin-bottom: 30px;
+}
 .carousel-caption{
     bottom:10rem;
     animation:slide-in 1.5s ease-out 1;
@@ -33,22 +40,21 @@ h2{
     display: none;
 }
 .offcanvas-body {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 .my-aside{
     background-color: #f2f3f7;
-    overflow: scroll;
 }
 
 .my-frame-fixed{
-    max-width: 350px;
+    max-width: 300px;
     position:fixed;
 }
 
 .my-aside-card{
     margin-top: 20px;
     border:transparent;
-    background-color: #f2f3f7;
+    background-color: transparent;
 }
 
 .my-aside-photo{
@@ -66,16 +72,13 @@ h2{
     color: rgb(118, 118, 118);
 }
 
-.my-list-item:hover,
-.my-list-item:active,
-.my-list-item:focus{
+.my-list-group a:hover,
+.my-list-group a:active
+{
     text-decoration: underline;
     color: rgb(33, 157, 194);
 }
 
-.my-paragraph{
-    margin: 20px 0px 80px 0px;
-}
 .my-paragraph>span{
     color:rgb(118, 118, 118);
     font-weight: 500;
@@ -106,7 +109,30 @@ h2{
     list-style: none;
 }
 
-@media screen and (max-width:769px) {
+.my-works-img-top{
+    height: 140px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.carousel-indicators [data-bs-target] {
+    filter:invert();
+}
+
+.my-works-carousel img{
+    height:400px;
+    object-fit:cover; 
+    object-position:top;
+  }
+  .my-works-carousel{
+    height:400px;
+    margin:auto;
+    overflow:hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+  }
+
+@media screen and (max-width:768px) {
     .my-canvas{
         display: block;
     }
@@ -128,16 +154,35 @@ h2{
     .btn-close{
         visibility:visible;
     }
-
+    .my-list-item:focus{
+        text-decoration: underline;
+        color: rgb(33, 157, 194);
+    }
     .offcanvas {
         max-width: 80%;
         background-color: #f2f3f7;
     }
     #carouselExampleAutoplaying{
         width: auto;
-        float: right;
     }
     .my-paragraph{
         text-align: center;
     }
+    .progress{
+        width: 90%;
+        margin: auto;
+    }
+    .row{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .my-works-carousel img{
+        height: 200px;
+        }
+        .my-works-carousel{
+        height: 200px;
+        }
 }
+
+
+ 
