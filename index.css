@@ -31,6 +31,7 @@ section{
 }
 
 .my-carrousel-img{
+    filter:brightness(70%);
     height: 736px;
     object-fit: cover;
 }
@@ -116,7 +117,7 @@ section{
 }
 
 .carousel-indicators [data-bs-target] {
-    filter:invert();
+    filter:invert(100%);
 }
 
 .my-works-carousel img{
