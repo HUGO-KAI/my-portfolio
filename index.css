@@ -123,14 +123,40 @@ section{
     height:400px;
     object-fit:cover; 
     object-position:top;
-  }
-  .my-works-carousel{
-    height:400px;
-    margin:auto;
-    overflow:hidden;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px black;
-  }
+}
+
+.my-works-carousel{
+height:400px;
+margin:auto;
+overflow:hidden;
+border-radius: 10px;
+box-shadow: 0px 0px 10px black;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.my-contact{
+    width: 100px;
+    height: 100px;
+    background-color: #f2f3f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-contact-right{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-contact-right a{
+    text-decoration: none;
+}
 
 @media screen and (max-width:768px) {
     .my-canvas{

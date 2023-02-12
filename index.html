@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Portfolio-Hugo kai</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
     <link href="./index.css" rel="stylesheet" />
   </head>
@@ -67,7 +71,7 @@
                 <a href="#services" class="my-list-item">SERVICES</a>
                 <a href="#skills" class="my-list-item">SKILLS</a>
                 <a href="#works" class="my-list-item">WORKS</a>
-                <a href="#" class="my-list-item">CONTACT</a>
+                <a href="#contact" class="my-list-item">CONTACT</a>
               </div>
             </div>
           </div>
@@ -77,7 +81,7 @@
 
     <!--Main-->
     <main class="row">
-      <!--aside-->
+      <!--aside left-->
       <aside class="col my-aside">
         <div class="my-frame-fixed">
           <div class="card my-aside-card text-center">
@@ -102,13 +106,14 @@
               <a href="#services" class="my-list-item">SERVICES</a>
               <a href="#skills" class="my-list-item">SKILLS</a>
               <a href="#works" class="my-list-item">WORKS</a>
-              <a href="#" class="my-list-item">CONTACT</a>
+              <a href="#contact" class="my-list-item">CONTACT</a>
             </div>
           </div>
         </div>
       </aside>
-      <!--carousel-->
+      <!--main right-->
       <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="padding: 0px">
+        <!--carousel-->
         <div
           id="carouselExampleAutoplaying"
           class="carousel slide carousel-fade"
@@ -140,9 +145,11 @@
             </div>
           </div>
         </div>
+
         <!--about-->
         <section id="about" class="container my-paragraph">
           <span>About me</span>
+          <hr />
           <div class="textContainer">
             <h2>Who am I?</h2>
             <p>
@@ -153,9 +160,11 @@
             </p>
           </div>
         </section>
+
         <!--services-->
         <section id="services" class="container my-paragraph">
           <span>What I do ?</span>
+          <hr />
           <div class="textContainer">
             <h2>Mes compétences</h2>
             <div class="row">
@@ -194,9 +203,11 @@
             </div>
           </div>
         </section>
+
         <!--Skills-->
         <section id="skills" class="container my-paragraph">
           <span>MY SPECIALTY</span>
+          <hr />
           <div class="textContainer">
             <h2>MY SKILLS</h2>
             <div>
@@ -324,9 +335,11 @@
             </div>
           </div>
         </section>
+
         <!--Works Mes projets-->
         <section id="works" class="container my-paragraph">
           <span>My works</span>
+          <hr />
           <div class="textContainer">
             <h2>Mes projets</h2>
           </div>
@@ -420,6 +433,39 @@
               ></span>
               <span class="visually-hidden">Next</span>
             </button>
+          </div>
+        </section>
+        <section id="contact" class="container my-paragraph">
+          <span>GET IN TOUCH</span>
+          <hr />
+          <div class="textContainer">
+            <h2>Contact</h2>
+          </div>
+          <div class="contact-container">
+            <div class="my-contact">
+              <i class="bi bi-envelope-at"></i>
+            </div>
+            <email class="my-contact-right">
+              <a href="mailto:devhugok@gmail.com">devhugok@gmail.com</a>
+            </email>
+          </div>
+          <div class="contact-container">
+            <div class="my-contact">
+              <i class="bi bi-linkedin"></i>
+            </div>
+            <div class="my-contact-right">
+              <a href="https://www.linkedin.com/in/Hugo-kai-TAN/"
+                >linkedin.com/in/Hugo-kai-TAN</a
+              >
+            </div>
+          </div>
+          <div class="contact-container">
+            <div class="my-contact">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <address class="my-contact-right">
+              <span>95600 Eaubonne, île de France</span>
+            </address>
           </div>
         </section>
       </div>
